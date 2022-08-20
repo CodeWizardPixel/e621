@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="flexWrapper">
+            <div id="card" class="animate">
+                <section id="S1">
+                    <div id="search">
+                        <input
+                            type="text"
+                            id="searchBox"
+                            maxlength="30"
+                            onkeydown="check(this)"
+                        />
+                    </div>
+                    <div id="settings">
+                        <input
+                            type="button"
+                            id="rating"
+                            value="safe"
+                            onclick="changeRating()"
+                        />
+                        <input
+                            type="button"
+                            id="ratio"
+                            value="1:1"
+                            onclick="changeRatio()"
+                        />
+                    </div>
+                    <div id="go">
+                        <input
+                            type="button"
+                            id="searchButton"
+                            value="Go"
+                            onclick="search()"
+                        />
+                    </div>
+                </section>
+            </div>
+            <section id="S2" class="animate">
+                <div id="progressbar">
+                    <div id="progressbarValue"></div>
+                </div>
+            </section>
+            <div id="sectionWrapper" class="animate">
+                <section id="S3">
+                    <div id="gallery"></div>
+                </section>
+            </div>
+        </div>
+        <div id="waterMark">
+            <a
+                href="https://discord.com/users/364386764955058177"
+                target="_blank"
+                >Creator</a
+            >
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
