@@ -59,7 +59,7 @@ async function loadPage(query) {
 }
 
 function showProgressBar() {
-    S1.style.opacity = "0%";
+    card.style.opacity = "0%";
     S2.style.opacity = "100%";
 }
 
@@ -68,9 +68,9 @@ async function changeProgress(state, expectedValue) {
 }
 
 async function showResult(imgList) {
-    card.style.opacity = "0%"
+    card.style.opacity = "0%";
     S2.style.opacity = "0%";
-    S3.style.opacity = "100%"
+    S3.style.opacity = "100%";
     sectionWrapper.style.opacity = "100";
     await(1300);
     audio.play();
